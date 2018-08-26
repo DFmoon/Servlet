@@ -1,0 +1,62 @@
+package entity;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
+//购物车类
+public class Cart {
+
+	//购买的商品集合
+	private HashMap<Items,Integer> goods;
+	
+	//购物车总金额
+	private double totalPrice;
+	
+	//构造方法
+	public Cart(){
+		goods=new HashMap<Items,Integer>();
+		totalPrice=0.0;
+	}
+	
+	//添加商品
+	public boolean addGoods(Items item,int number){
+		goods.put(item,number);
+		return true;
+	}
+	
+	//删除商品
+	public boolean removeGoods(Items item){
+		goods.remove(item);
+		return true;
+	}
+	
+	//计算总价
+	public double calTotal(){
+		double sum=0.0;
+		Set<Items> keys=goods.keySet();//获得键的集合
+		Iterator<Items> it=keys.iterator();//获得迭代器对象
+		while(it.hasNext()){
+			Items i=it.next();
+			sum+=i.getPrice()*goods.get(i);
+		}
+		this.setTotalPrice(sum);
+		return this.getTotalPrice();
+	}
+
+	public HashMap<Items, Integer> getGoods() {
+		return goods;
+	}
+
+	public void setGoods(HashMap<Items, Integer> goods) {
+		this.goods = goods;
+	}
+
+	public double getTotalPrice() {
+		return totalPrice;
+	}
+
+	public void setTotalPrice(double totalPrice) {
+		this.totalPrice = totalPrice;
+	}
+}
