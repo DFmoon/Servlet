@@ -8,7 +8,6 @@
 <body>
 	<h1>servlet</h1>
 	<hr>
-	
 	<!-- get请求 -->
 	<a href="servlet/hello">Get方式请求hello</a><br>
 	

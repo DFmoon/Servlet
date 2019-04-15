@@ -1,8 +1,0 @@
-package entity;
-//用户实体类
-public class users {
-	private String username;
-	private String password;
-	private String email;
-	private String gender;
-}

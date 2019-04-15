@@ -1,0 +1,14 @@
+127.0.0.1 - - [22/Feb/2019:16:50:10 +0800] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [22/Feb/2019:16:50:11 +0800] "GET /Exercise/3.1_reg.jsp HTTP/1.1" 404 1098
+0:0:0:0:0:0:0:1 - - [22/Feb/2019:16:53:07 +0800] "GET /Exercise/6.1_index.jsp HTTP/1.1" 404 1100
+0:0:0:0:0:0:0:1 - - [22/Feb/2019:16:53:17 +0800] "GET /Exercise/1_example.jsp HTTP/1.1" 404 1100
+0:0:0:0:0:0:0:1 - - [22/Feb/2019:16:53:23 +0800] "GET /Exercise/1_example.jsp HTTP/1.1" 404 1100
+0:0:0:0:0:0:0:1 - - [22/Feb/2019:17:00:01 +0800] "GET /Exercise/WEB-INF/classes/servlet/reg.java HTTP/1.1" 404 1131
+127.0.0.1 - - [22/Feb/2019:17:06:33 +0800] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [22/Feb/2019:17:06:35 +0800] "GET /Exercise/servlet/reg HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [22/Feb/2019:17:06:43 +0800] "GET /Exercise/1_example.jsp HTTP/1.1" 200 497
+0:0:0:0:0:0:0:1 - - [22/Feb/2019:17:12:25 +0800] "GET /Exercise/4.1_login.jsp HTTP/1.1" 200 640
+0:0:0:0:0:0:0:1 - - [22/Feb/2019:17:12:34 +0800] "POST /Exercise/servlet/login HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [22/Feb/2019:17:12:35 +0800] "GET /Exercise/4.3_login_fail.jsp HTTP/1.1" 200 284
+127.0.0.1 - - [22/Feb/2019:17:52:21 +0800] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [22/Feb/2019:17:52:23 +0800] "GET /Exercise/1_example.jsp HTTP/1.1" 200 497
